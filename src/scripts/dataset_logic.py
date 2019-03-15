@@ -143,7 +143,7 @@ def load_data_wikipedia_hyperlink(data_path=None):
     data_path: the path to the preprocessed dataset.
     """
     if data_path is None:
-        data_path = '../data/wikipedia_hlink/wikipedia_hlink_preprocessed.npz'
+        data_path = '../data/wikipedia_hlink/wikipedia_hlink_processed.npz'
 
     with tf.gfile.Open(data_path, mode='rb') as f:
         loaded = np.load(f, allow_pickle=True)
